@@ -1,0 +1,44 @@
+------------------------Full Stack Software Engineering------------------------
+
+We have divided course curriculum into following modules.
+
+1.   The Big Picture: Software Engineering
+This module aims to provide fundamental concepts in the software development ecosystem.
+It includes a basic introduction to tools and technologies along with various roles that
+engineers have: full-stack development, quality assurance & devops
+
+
+2.   Fundamentals of Web Development
+This module aims to build on the basic concepts to learn Python.
+It uses the ideas from the previous modules especially version control, project management & devops.
+
+    a. HTML fundamentals
+    b. Designs with CSS
+    c. Introduction to JS and ES6
+
+
+3.   Python programming
+This module aims to build basic concepts to learn Python.
+It uses the ideas from the previous modules, especially version control, project management.
+    a. Programming in Python
+    b. Interfacing database with Python
+    c. Python package management
+
+
+4.  Backend Framework: Django
+This module will introduce the use of Django framework in Python for web development.
+It includes setting up the framework, basic CRUD operations, authentication & other core elements of Django.
+
+
+5.  Frontend Library: React
+This module will introduce React.js as a Frontend library to create a single page application.
+
+    a. Basic: Introduction, create-react-app cli.
+    b. Advanced: Component States, Lifecycle and Hooks, JSX and Event bindings.
+    c. API integrations and data management with React.js.
+
+
+6.  Capstone Project: Final Project
+During these final weeks, you will create a final project which includes every concept from the previous modules
+
+-------------------------------------------------------------------------------------------------------------------
