@@ -28,7 +28,6 @@ def courseEnquiry():
 
 
 def showStudentsInfo():
-
     df = pd.read_csv("studentInfo.csv", index_col='Name')
     return df
 
@@ -36,12 +35,27 @@ def showStudentsInfo():
 def updateStudentInfo():
 
     df = showStudentsInfo()
-    nameofStudent = input("Enter name of the student whose info you want to update: ")
-    return df.loc[nameofStudent]
+    indexofStudent = int(input("Enter index of the student whose info you want to update: "))
+    inputupdate = int(input("Input index of properties that you want to update: "))
+    value = input("Input updated value: ").title()
+    df.iloc[indexofStudent, inputupdate] = value
+    return df
+
+
+def deleteStudentInfo():
+
+    df = showStudentsInfo()
+
+    choice = input("Do you want to delete this info? (Y/N) : ")
+    if choice == 'Y':
+        indexofStudent = (input("Enter index of the student whose info you want to delete: "))
+        df.drop([indexofStudent], axis=0)
+        return df
+    elif choice == 'N':
+        return "----Go back to home page----"
 
 
 if choice == 1:
-
     courseEnquiry()
 
 elif choice == 2:
@@ -78,6 +92,11 @@ elif choice == 3:
 
 elif choice == 4:
     print(updateStudentInfo())
+    print("!!!!!!!!!!!Info Successfully Updated!!!!!!!!!!!!!!!")
+
+
+elif choice == 5:
+    print(deleteStudentInfo())
 
 
 
